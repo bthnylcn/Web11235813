@@ -1,0 +1,94 @@
+<html>
+	<head>
+	<title>Pink Floyd's Fan Page</title>
+	<!-- import bootstrap -->
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="bootstrap.css"
+		      />
+
+		<!-- import our own stylesheet -->
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="styles.css"
+		      />	
+
+		<!-- import jQuery -->
+		<script src = "http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="top">
+		<a 
+		href="WebPageForCourse.html">
+			Home
+		</a>
+		&nbsp;
+		
+		<a 
+		href="Albums.html">
+			Albums
+		</a>
+		&nbsp;
+
+		<a href="About.html">
+			 Pink Floyd
+		</a>
+				
+		</div>
+		<div class="mid">
+		<h1 id="heymama" onclick="hey();">Pink Floyd's Fan Page</h1>
+		
+		<h2>Hey you, out there in the cold</h2>
+		
+		<p>This page is public.</p>
+		<p>If you want to see my favorite song,you can click <a href="https://www.youtube.com/watch?v=_FrOQC-zEog">this link</a></p>
+		<div class="container">
+		<h1>Image Gallery</h1>
+
+		<div class="row">
+				<div class="col-md-3">
+					<img class="crop-img" 
+					src="https://akilfikir.net/wp-content/uploads/2018/09/pink_floyd.jpg"
+					alt="img1"/> 
+				</div>
+				<div class="col-md-3">
+					<img class="crop-img" 
+					src="https://i.pinimg.com/564x/6a/e0/07/6ae007a47af109ef3bb3ca7011a1c592.jpg" 
+					alt="img2"/> 
+				</div>
+				<div class="col-md-3">
+					<img class="crop-img" 
+					src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/82c453bc-66da-40f9-bca8-3c36e3e5149a/db15sml-5d095952-1f22-4c5a-90a5-abcd7a786ff0.png/v1/fill/w_1024,h_576,q_80,strp/pink_floyd_wallpaper_by_desertwiggle_db15sml-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzYiLCJwYXRoIjoiXC9mXC84MmM0NTNiYy02NmRhLTQwZjktYmNhOC0zYzM2ZTNlNTE0OWFcL2RiMTVzbWwtNWQwOTU5NTItMWYyMi00YzVhLTkwYTUtYWJjZDdhNzg2ZmYwLnBuZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Re1XpfEmCAwKFGkc3viptNMIiylfmgD-k6_ytM5qJCY" 
+					alt="img3"/> 
+				</div>
+					<div class="col-md-3">
+						<img class="crop-img" 
+						src="https://external-preview.redd.it/zZG080Z-uy_z1Rsf29DhkD8ki8BIHGCQUC99u-vE4Tg.jpg?auto=webp&s=3b0e66826e4bd25851e51661b89bd5684f6cac7d" 
+						alt="img4"/> 
+					</div>
+				</div>
+		
+			<div class="row">
+				<div class="col-md-12">
+					<img id="bigImage" 
+					class="large-img" 
+					src="https://akilfikir.net/wp-content/uploads/2018/09/pink_floyd.jpg" /> 
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function hey(){
+			$("#heymama").html("FinkPloyd");
+			$("#heymama").click(function(){
+				$("#heymama").html("Pink Floyd Fan Page");
+				$("#heymama").off("click");
+				});
+			};
+		$(".crop-img").click(function(){
+		$("#bigImage").attr('src', 
+			$(this).attr('src'));
+		});
+	</script>
+</html>
