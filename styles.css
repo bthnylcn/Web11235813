@@ -18,3 +18,8 @@
 body{
   background:#E9DBEA;
 }
+
+.soundcloud {
+      position: fixed;
+      bottom: 50px;
+  }
